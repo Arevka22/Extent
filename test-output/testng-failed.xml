@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.utility.ExtentReporterListener"/>
+  </listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.reports.ReportExtend"/>
+      <class name="com.reports.ReportExtend2"/>
+      <class name="com.reports.ReportExtend3"/>
+    </classes>
+  </test> <!-- Test -->
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="com.reports.ReportExtend">
+        <methods>
+          <include name="tearDown"/>
+          <include name="oneTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.reports.ReportExtend -->
+      <class name="com.reports.ReportExtend2">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="fifthTest"/>
+        </methods>
+      </class> <!-- com.reports.ReportExtend2 -->
+      <class name="com.reports.ReportExtend3">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.reports.ReportExtend3 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
