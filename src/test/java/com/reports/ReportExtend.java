@@ -57,7 +57,7 @@ public class ReportExtend {
 		 
 		
 	System.out.println(driver.getTitle());
-	Assert.assertEquals(driver.getTitle(), "AREVKAffffff IN FASHION");	
+	Assert.assertEquals(driver.getTitle(), "AREVKA IN FASHION");	
 	}
 	
 	
