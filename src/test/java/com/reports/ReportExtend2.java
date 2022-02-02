@@ -51,7 +51,7 @@ public class ReportExtend2 {
 			
 			
 		System.out.println(driver.getCurrentUrl());
-		Assert.assertEquals(5543,5);	
+		Assert.assertEquals(5,5);	
 			
 		}
 		
